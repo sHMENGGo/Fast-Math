@@ -221,7 +221,6 @@ start.onclick = function(){
     randomNum2();
     start.style.display = "none";
     result.style.display = "none";
-    intro.style.display = "none";
     input.style.display = "block";
     input.focus();
     submit.style.display = "block";
