@@ -169,6 +169,7 @@ body {
     letter-spacing: 1px;
     animation: crawlToLeft 15s linear infinite;
     white-space: nowrap;
+    position: absolute;
 }
 @keyframes crawlToLeft {
     0% { transform: translateX(150%); }
