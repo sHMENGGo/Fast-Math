@@ -175,25 +175,11 @@ function checkAnswer(){
         randomNum2();
         question.innerHTML = num1 + " " + operator + " " + num2;
         randomText = Math.floor(Math.random() * 5);
-        switch(randomText){
-            case 0: result.innerHTML = "TALINO POTA!"; break;
-            case 1: result.innerHTML = "GALING GAGO!"; break;
-            case 2: result.innerHTML = "PWEDE NA"; break;
-            case 3: result.innerHTML = "CHEATER YATA"; break;
-            case 4: result.innerHTML = "LUPET AMPUCHA!"; break;
-        }
-        result.style.display = "block";
-        timer.style.display = "none";
-        setTimeout(function(){
-            result.style.display = "none";
-            timer.style.display = "block";
-        }, 1500);
-        
     } 
     else{
         clearInterval(intervalId);
-        if(score == 1 || score == 0) result.innerHTML = "BOBO <br>" + score + " point";
-                else result.innerHTML = "BOBO <br>" + score + " points";
+        if(score == 1 || score == 0) result.innerHTML = "Answer: " + correctAnswer + "<br> Score: " + score;
+                else result.innerHTML = "Answer: " + correctAnswer + "<br> Score: " + score;
         result.style.display = "block";
         score = 0;
         document.querySelector(".score").innerHTML = score;
