@@ -102,7 +102,7 @@ function enteredTime(){
         enterTime.style.display = "none";
         timeUse.innerHTML = parseInt(inputTime.value);
         start.style.display = "block";
-        if(operator == "/" || allClick == true){
+        if(operator == "÷" || allClick == true){
             decimalInstruc.style.display = "block";
             yes.style.display = "block";
             no.style.display = "block";
