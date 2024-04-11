@@ -135,7 +135,7 @@ function randomSign(){
         case 1: operator = "+"; break;
         case 2: operator = "-"; break;
         case 3: operator = "x"; break;
-        case 4: operator = "/"; break;
+        case 4: operator = "÷"; break;
     }
     return operator;
 }
