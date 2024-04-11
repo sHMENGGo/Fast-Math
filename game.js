@@ -71,7 +71,7 @@ function OperationFunc(){
     if(addClick == true){ operationUse.innerHTML = "Addition"; operator = "+"; }
     if(subtractClick == true){ operationUse.innerHTML = "Subtraction"; operator = "-"; }
     if(multiplyClick == true){ operationUse.innerHTML = "Multiplication"; operator = "x"; }
-    if(divideClick == true){ operationUse.innerHTML = "Division"; operator = "/"; }
+    if(divideClick == true){ operationUse.innerHTML = "Division"; operator = "÷"; }
     if(allClick == true){ operationUse.innerHTML = "All"; operator = randomSign(); }
 }
 
@@ -158,7 +158,7 @@ function checkAnswer(){
     if (operator === "+") { correctAnswer = num1 + num2; }
     if (operator === "-") { correctAnswer = num1 - num2; } 
     if (operator === "x") { correctAnswer = num1 * num2; }  
-    if (operator === "/") { 
+    if (operator === "÷") { 
         if(haveDecimal == true){ correctAnswer = correctAnswer = num1 / num2 }
         else correctAnswer = Math.floor(num1 / num2);  
     }
